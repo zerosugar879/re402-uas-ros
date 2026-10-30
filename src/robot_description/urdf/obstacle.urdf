@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="obstacle">
+  <!-- Blue obstacle box 40x20x10cm -->
+  <link name="obstacle">
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.4 0.2 0.1"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0.2 0.2 1.0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.4 0.2 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <gazebo reference="obstacle">
+    <visual>
+      <material>
+        <ambient>0.2 0.2 1.0 1</ambient>
+        <diffuse>0.2 0.2 1.0 1</diffuse>
+      </material>
+    </visual>
+  </gazebo>
+</robot>

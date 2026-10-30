@@ -1,0 +1,626 @@
+<!-- AprilTag fiducial marker for visual localization -->
+<link name="aprilTag">
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
+    </inertial>
+      <visual>
+        <origin xyz="-0.0438 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 0.0312 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 0.0188 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 -0.0062 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 -0.0187 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 -0.0313 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0438 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0312 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0188 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.0062 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0062 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0187 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0313 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.0438 -0.0438 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="0.0125 0.0125 0.001"/>
+        </geometry>
+        <material name="">
+          <color rgba="0 0 0 1"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.045 0.045 -0.02" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0025" length="0.04"/>
+        </geometry>
+        <material name="">
+          <color rgba="0.30 0.15 0.05 1.0"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.045 0.045 -0.02" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0025" length="0.04"/>
+        </geometry>
+        <material name="">
+          <color rgba="0.30 0.15 0.05 1.0"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="-0.045 -0.045 -0.02" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0025" length="0.04"/>
+        </geometry>
+        <material name="">
+          <color rgba="0.30 0.15 0.05 1.0"/>
+        </material>
+      </visual>
+      <visual>
+        <origin xyz="0.045 -0.045 -0.02" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.0025" length="0.04"/>
+        </geometry>
+        <material name="">
+          <color rgba="0.30 0.15 0.05 1.0"/>
+        </material>
+      </visual>
+  </link>
+  <!-- Joint attaching AprilTag to robot body -->
+  <joint name="aprilTag_joint" type="fixed">
+    <origin xyz="-0.088 -0.038 0.140" rpy="0 0 0"/>
+    <parent link="robot"/>
+    <child link="aprilTag"/>
+  </joint>
+

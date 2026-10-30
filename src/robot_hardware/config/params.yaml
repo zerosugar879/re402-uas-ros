@@ -1,0 +1,146 @@
+vision_node:
+  ros__parameters:
+    theta_offset: 0.0          # tag heading offset (rad)
+    robot_exclude_radius: 40   # exclude robot body radius (px)
+
+    # Ball HSV
+    hsv_h_low: 20
+    hsv_h_high: 35
+    hsv_s_low: 100
+    hsv_v_low: 100
+    hsv_min_area: 100          # min contour area (px)
+
+    # Obstacle HSV
+    obs_h_low: 95
+    obs_h_high: 115
+    obs_s_low: 170
+    obs_v_low: 190
+    obs_v_high: 255
+    obs_min_area: 400
+
+controller_node:
+  ros__parameters:
+    # Linear speed
+    kp_v: 0.0022               # P gain linear
+    max_linear_vel: 0.35       # max linear (m/s)
+    min_linear_vel: 0.065      # min linear (m/s)
+    straight_linear_vel: 0.35  # straight linear speed (m/s)
+
+    # Angular speed
+    kp_w: 0.6                  # P gain angular
+    path_turn_kp: 0.55         # path follow angular gain
+    max_angular_vel: 0.6       # max angular (rad/s)
+
+    # Boost linear
+    boost_straight_linear_vel: 0.12
+    boost_max_linear_vel: 0.65
+    boost_min_linear_vel: 0.065
+    boost_kp_v: 0.003
+
+    # Boost angular
+    boost_kp_w: 0.6
+    boost_max_angular_vel: 0.6
+
+    # Shared
+    stop_dist: 90
+    heading_offset: 0.0
+    wheel_base: 0.2            # wheel track (m)
+    wheel_radius: 0.1          # wheel radius (m)
+    max_wheel_vel: 10.0        # max wheel speed (rad/s)
+    pwm_max: 120
+    drift_gain: 0.02           # IMU drift correction gain
+    startup_delay: 2.0         # startup wait (s)
+    path_follow_kp: 0.003      # path follow P gain
+    path_deadband: 18.0        # path follow deadband (deg)
+    path_slowdown_dist: 80.0   # slowdown dist (px)
+    obstacle_avoidance: true
+    vision_timeout: 0.3        # vision data timeout (s)
+    wp_threshold: 30           # waypoint arrival (px)
+    stop_hold_duration: 5.0    # stop hold at target (s)
+    boost_duration: 0.02       # boost period (s)
+    field_left: 20
+    field_right: 620
+    field_top: 20
+    field_bottom: 460
+
+communication_node:
+  ros__parameters:
+    esp32_ip: "192.168.xx.xxx"
+    esp32_port: 8888
+    motor_enable: true
+
+    # Linear PWM
+    pwm_min: 85
+    pwm_max: 160
+    pwm_straight: 160
+
+    # Angular PWM
+    pwm_turn: 125
+
+    # Boost linear PWM
+    boost_pwm_min: 85
+    boost_pwm_max: 160
+    boost_pwm_straight: 160
+
+    # Boost angular PWM
+    boost_pwm_turn: 125
+
+    # Shared
+    wheel_base: 0.20
+    wheel_radius: 0.05
+    max_wheel_vel: 6.0
+
+path_planner_node:
+  ros__parameters:
+    astar_cell_size: 10        # grid cell size (px)
+    astar_obstacle_radius: 2   # obstacle padding (cells)
+    astar_clearance: 2         # clearance around obs (cells)
+    field_left: 20
+    field_right: 620
+    field_top: 20
+    field_bottom: 460
+    vision_timeout: 0.3
+    obstacle_avoidance: true
+    replan_threshold: 5       # replan if robot moves (px)
+    path_replan_interval: 2    # replan every N cycles
+
+vision_overlay:
+  ros__parameters:
+    a: 0.003026                # affine transform a
+    b: 0.000074                # affine transform b
+    c: -0.958449               # affine transform c
+    d: 0.000012                # affine transform d
+    e: -0.003104               # affine transform e
+    f: 0.682901                # affine transform f
+    overhead_scale: 290.0      # pixel per meter
+    overhead_cx: 320.0         # camera center x
+    overhead_cy: 240.0         # camera center y
+
+robot_state_publisher:
+  ros__parameters:
+    a: 0.003026
+    b: 0.000074
+    c: -0.958449
+    d: 0.000012
+    e: -0.003104
+    f: 0.682901
+    invert_heading: true
+
+ball_state_publisher:
+  ros__parameters:
+    a: 0.003026
+    b: 0.000074
+    c: -0.958449
+    d: 0.000012
+    e: -0.003104
+    f: 0.682901
+
+obstacle_state_publisher:
+  ros__parameters:
+    a: 0.003026
+    b: 0.000074
+    c: -0.958449
+    d: 0.000012
+    e: -0.003104
+    f: 0.682901
+    max_obstacles: 5

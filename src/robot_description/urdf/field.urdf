@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="field">
+  <link name="field">
+    <inertial>
+      <origin xyz="-0.0654 -0.0327 0.1477" rpy="0 0 0"/>
+      <mass value="29.46"/>
+      <inertia ixx="3.874" ixy="0" ixz="0" iyy="4.056" iyz="0" izz="7.489"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="-0.06 -0.03 0.015" rpy="0 0 0"/>
+      <geometry>
+        <box size="1.6 1.6 0.02"/>
+      </geometry>
+      <material name="floor_green">
+        <color rgba="0.15 0.55 0.15 1"/>
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="-0.06 -0.03 0.015" rpy="0 0 0"/>
+      <geometry>
+        <box size="1.6 1.6 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="field"/>
+    <child link="camera_link"/>
+    <origin xyz="0.0 0.0 2.2" rpy="0 1.5708 0"/>
+  </joint>
+
+  <link name="camera_link">
+    <visual>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+      <material name="camera_black">
+        <color rgba="0.1 0.1 0.1 1"/>
+      </material>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <link name="left_pole">
+    <visual>
+      <origin xyz="0 0 1.1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.04 0.04 2.2"/>
+      </geometry>
+      <material name="pole_gray">
+        <color rgba="0.4 0.4 0.4 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="left_pole_joint" type="fixed">
+    <parent link="field"/>
+    <child link="left_pole"/>
+    <origin xyz="-0.03 0.82 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="right_pole">
+    <visual>
+      <origin xyz="0 0 1.1" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.04 0.04 2.2"/>
+      </geometry>
+      <material name="pole_gray">
+        <color rgba="0.4 0.4 0.4 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="right_pole_joint" type="fixed">
+    <parent link="field"/>
+    <child link="right_pole"/>
+    <origin xyz="-0.03 -0.87 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="crossbar">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.03 1.75 0.03"/>
+      </geometry>
+      <material name="pole_gray">
+        <color rgba="0.4 0.4 0.4 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="crossbar_joint" type="fixed">
+    <parent link="field"/>
+    <child link="crossbar"/>
+    <origin xyz="-0.03 -0.025 2.2" rpy="0 0 0"/>
+  </joint>
+
+  <link name="left_pole_base">
+    <visual>
+      <origin xyz="0 0 0.075" rpy="0 0 0"/>
+      <geometry><box size="0.15 0.15 0.15"/></geometry>
+      <material name="wall">
+        <color rgba="0.90 0.85 0.70 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="left_pole_base_joint" type="fixed">
+    <parent link="field"/>
+    <child link="left_pole_base"/>
+    <origin xyz="-0.03 0.82 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="right_pole_base">
+    <visual>
+      <origin xyz="0 0 0.075" rpy="0 0 0"/>
+      <geometry><box size="0.15 0.15 0.15"/></geometry>
+      <material name="wall">
+        <color rgba="0.90 0.85 0.70 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="right_pole_base_joint" type="fixed">
+    <parent link="field"/>
+    <child link="right_pole_base"/>
+    <origin xyz="-0.03 -0.87 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="wall_right">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <geometry><box size="0.02 1.6 0.15"/></geometry>
+      <material name="wall"><color rgba="0.90 0.85 0.70 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.02 1.6 0.15"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_right_joint" type="fixed">
+    <parent link="field"/>
+    <child link="wall_right"/>
+    <origin xyz="0.75 -0.03 0.075" rpy="0 0 0"/>
+  </joint>
+
+  <link name="wall_left">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <geometry><box size="0.02 1.6 0.15"/></geometry>
+      <material name="wall"><color rgba="0.90 0.85 0.70 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="0.02 1.6 0.15"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_left_joint" type="fixed">
+    <parent link="field"/>
+    <child link="wall_left"/>
+    <origin xyz="-0.87 -0.03 0.075" rpy="0 0 0"/>
+  </joint>
+
+  <link name="wall_top">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <geometry><box size="1.6 0.02 0.15"/></geometry>
+      <material name="wall"><color rgba="0.90 0.85 0.70 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="1.6 0.02 0.15"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_top_joint" type="fixed">
+    <parent link="field"/>
+    <child link="wall_top"/>
+    <origin xyz="-0.06 0.78 0.075" rpy="0 0 0"/>
+  </joint>
+
+  <link name="wall_bottom">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <geometry><box size="1.6 0.02 0.15"/></geometry>
+      <material name="wall"><color rgba="0.90 0.85 0.70 1"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="1.6 0.02 0.15"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_bottom_joint" type="fixed">
+    <parent link="field"/>
+    <child link="wall_bottom"/>
+    <origin xyz="-0.06 -0.84 0.075" rpy="0 0 0"/>
+  </joint>
+
+  <gazebo>
+    <static>true</static>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="camera_link">
+    <sensor name="overhead_camera" type="camera">
+      <pose>0 0 0 0 0 0</pose>
+      <topic>/overhead_camera/image_raw</topic>
+      <always_on>1</always_on>
+      <update_rate>30</update_rate>
+      <visualize>true</visualize>
+      <camera>
+        <horizontal_fov>0.930</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>50</far>
+        </clip>
+      </camera>
+    </sensor>
+  </gazebo>
+
+</robot>
